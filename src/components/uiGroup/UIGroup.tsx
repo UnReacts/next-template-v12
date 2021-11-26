@@ -1,5 +1,5 @@
 const UIGroup = () => {
-  return <></>
-}
+  return <></>;
+};
 
-export default UIGroup
+export default UIGroup;

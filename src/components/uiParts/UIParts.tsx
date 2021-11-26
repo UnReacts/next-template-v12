@@ -1,5 +1,5 @@
 const UIParts = () => {
-  return <></>
-}
+  return <></>;
+};
 
-export default UIParts
+export default UIParts;
