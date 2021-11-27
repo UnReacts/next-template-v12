@@ -1,34 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 開発のテンプレート
 
-## Getting Started
+Next.js の開発はこのテンプレートをベースに行ってください。
 
-First, run the development server:
+## 環境
 
-```bash
-npm run dev
-# or
-yarn dev
+`package.json` を参照ください。
+
+# テンプレートの使い方
+
+テンプレートは以下の手順で使用してください。
+
+## 1. `create-next-app` する
+
+`create-next-app` の `--example` オプションを使ってテンプレートからプロジェクトを始めることができます。
+以下のコマンドの `your-app-name` に自分の作りたいプロジェクト名を入れてコマンドを実行してください。
+
+```shell
+npx create-next-app your-app-name --example https://github.com/UnReacts/next-template-v12
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. README.md を書き換える
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+プロジェクトの内容にあわせて、`README.md`を書き換えます。
+1 番下に `README.md` の参考を載せています。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 3. プッシュする
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`README.md`を書き換えたら、プロジェクトリポジトリにプッシュします。
+あらかじめからのリポジトリを作成しておきます。
 
-## Learn More
+```shell
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin <リポジトリのURL>
+git push -u origin main
+```
 
-To learn more about Next.js, take a look at the following resources:
+# ディレクトリ構成について
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+今回は、すべてのファイルを src に入れています。
+コンポーネントのディレクトリには`layout`・`uiGroup`・`uiParts`を採用しています。
+カスタム型定義は `types` ディレクトリの中にファイルを作成し格納しましょう。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+.
+├── .next
+├── public //主に画像ファイルを格納する
+│   └── dummyImage //ダミー画像を格納しているのでプロジェクトが始まったら削除する
+├── src
+│   ├── api //WebApi等の外部APIのクライアントを配置する
+│   ├── components
+│   │   ├── layout //ロジックがない他のコンポーネントをラップするコンポーネント
+│   │   ├── uiGroup //基本的にはここにコンポーネントを作成する
+│   │   └── uiParts //使い回せそうなものだけuiGroupからここに切り出す
+│   ├── lib //モジュール化されたロジックを配置する
+│   ├── lib //モジュール化されたロジックを配置する
+│   ├── pages //ページテンプレートを配置する
+│   │   ├── api
+│   │   │   └──hello.ts //デフォルトのやつ
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   └── index.tsx
+│   ├── styles
+│   └── types //カスタム型定義
+...
+```
 
-## Deploy on Vercel
+### `README.md` の参考
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+````md
+# プロジェクトの概要
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+このプロジェクトは、~です。
+
+# 開発に参加するまでの流れ
+
+以下の手順を踏んで開発に参加しましょう。
+
+## 1. `git clone`
+
+以下のコマンドを実行してクローンします。
+
+```shell
+git clone <リポジトリの URL>
+```
+
+## 2. `npm install`
+
+`npm install`を行います。`npm`のバージョンは Volta で固定していますが、Volta を使っていない人は、`npm -v`で 8 系かどうかを確かめます。
+
+```shell
+#npmのバージョンを確認（8系でない場合は、8系をインストール）
+npm -v
+
+#パッケージをインストール
+npm install
+```
+
+## 3. `npm run dev`
+
+`npm run dev`でローカルサーバーを立ち上げます。
+
+```shell
+npm run dev
+```
+````
