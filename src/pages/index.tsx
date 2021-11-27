@@ -1,6 +1,4 @@
-import type { NextPage } from 'next';
-
-const Home: NextPage = () => {
+const Home = (): JSX.Element => {
   return <div>Hello Next.js!</div>;
 };
 
