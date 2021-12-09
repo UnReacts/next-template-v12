@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='ja' dir='ltr'>
+      <Html lang="ja" dir="ltr">
         <Head>
           {/* サイト全体に反映させたいデフォルトの設定を記述する ex) Google Fonts の読み込み */}
         </Head>
