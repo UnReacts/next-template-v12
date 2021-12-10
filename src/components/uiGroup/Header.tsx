@@ -33,7 +33,7 @@ const Header = () => {
         <nav className="hidden md:block">
           <ol className="flex space-x-10 font-bold">
             {headerLinkList.map(({ title, link }) => (
-              <li className="group overflow-hidden" key={title}>
+              <li className="group overflow-hidden cursor-pointer" key={title}>
                 <Link href={link}>
                   <a>{title}</a>
                 </Link>
