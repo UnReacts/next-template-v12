@@ -1,7 +1,6 @@
 import NextHeadSeo from 'next-head-seo';
 
-import Footer from '../uiGroup/Footer';
-
+import Footer from '@/components/uiGroup/Footer';
 import Header from '@/components/uiGroup/Header';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
