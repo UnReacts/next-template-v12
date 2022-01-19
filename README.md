@@ -48,6 +48,7 @@ git push -u origin main
 ├── .next
 ├── public //画像ファイルを格納する
 ├── src
+│   ├── @types //カスタム型定義
 │   ├── components
 │   │   ├── layout //ロジックがない他のコンポーネントをラップするコンポーネント
 │   │   ├── uiGroup //基本的にはここにコンポーネントを作成する
@@ -60,8 +61,7 @@ git push -u origin main
 │   │   ├── _app.tsx
 │   │   ├── _document.tsx
 │   │   └── index.tsx
-│   ├── styles
-│   └── types //カスタム型定義
+│   └── styles
 ...
 ```
 
