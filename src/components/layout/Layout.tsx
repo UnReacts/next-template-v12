@@ -6,10 +6,22 @@ import Header from '@/components/uiGroup/Header';
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // サイトごとに設定値を変える
 const APP_NAME = '株式会社UnReact';
-const APP_ROOT_URL = 'https://unreact.jp';
+const APP_ROOT_URL = 'https://unreact.jp'; // 末尾に `/` をつけない
 const APP_DEFAULT_DESCRIPTION = '株式会社UnReactのメタディスクリプションです。';
 const APP_DEFAULT_OG_IMAGE_PATH = '/default-unreact.png';
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+  Props について
+    - `path`: [必須] そのページの相対パスを渡す。
+    - `title`: [必須] そのページのタイトルを渡す。
+    - `description`: そのページのメタディスクリプションを渡す。省略した場合、`APP_DEFAULT_DESCRIPTION` が使用される。
+    - `ogImagePath`: そのページのOGP画像のパスを渡す。省略した場合、`APP_DEFAULT_OG_IMAGE_PATH` が使用される。
+    - `noindex`: そのページを noindex する場合は `true` を渡す。
+    - `noTitleTemplate`: TOP ページで `true` を渡す。それ以外のページは基本省略。タイトルの後ろに `- サイトのタイトル` をつけるかどうか条件分岐に使用。
+    - `isTopPage`: TOP ページで `true` を渡す。それ以外のページは省略。OG タイプの条件分岐に使用。
+    - `children`: [必須]
+*/
 
 // prop types
 type LayoutProps = {
