@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="py-10 bg-gray-50">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-start">
+        <div className="flex flex-col justify-between items-start md:flex-row">
           {/* ロゴ */}
           <Link href="/">
             <a>
@@ -28,7 +28,7 @@ const Footer = () => {
               {footerLinkList.map(({ title, link }) => (
                 <li key={title}>
                   <Link href={link}>
-                    <a className="block py-2 mb-1 text-sm md:text-base hover:opacity-75 duration-300">
+                    <a className="block py-2 mb-1 text-sm hover:opacity-75 duration-300 md:text-base">
                       {title}
                     </a>
                   </Link>

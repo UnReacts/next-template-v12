@@ -37,14 +37,14 @@ const Header = () => {
                 <Link href={link}>
                   <a>{title}</a>
                 </Link>
-                <span className="block w-full h-[3px] bg-primary duration-300 transform translate-x-[-101%] group-hover:translate-x-0"></span>
+                <span className="block w-full h-[3px] bg-primary duration-300 translate-x-[-101%] group-hover:translate-x-0"></span>
               </li>
             ))}
           </ol>
         </nav>
 
         {/* ハンバーガーボタン */}
-        <button className="block md:hidden relative z-50 w-12 h-12" onClick={handleMenuClick}>
+        <button className="block relative z-50 w-12 h-12 md:hidden" onClick={handleMenuClick}>
           <span
             className={`inline-block absolute  h-1 bg-primary duration-300 ${
               isOpen
