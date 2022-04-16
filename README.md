@@ -6,6 +6,16 @@ Next.js の開発はこのテンプレートをベースに行ってください
 
 `package.json` を参照ください。
 
+## 使用しているパッケージ
+
+### [`tailwindcss`](https://tailwindcss.com/)
+
+プロジェクトのスタイリングは Tailwind CSS を使用しています。`postcss` と `autoprefixer` も一緒に使用しています。
+
+### [`next-head-seo`](https://github.com/catnose99/next-head-seo)
+
+catnose さんが作成した SEO カスタマイズ系の軽量パッケージです。`Layout` コンポーネントで使用しています。
+
 # テンプレートの使い方
 
 テンプレートは以下の手順で使用してください。
@@ -71,6 +81,17 @@ git push -u origin main
 # プロジェクトの概要
 
 このプロジェクトは、~です。
+
+## 使用しているパッケージ
+
+### [`tailwindcss`](https://tailwindcss.com/)
+
+プロジェクトのスタイリングは Tailwind CSS を使用しています。`postcss` と `autoprefixer` も一緒に使用しています。
+
+### [`next-head-seo`](https://github.com/catnose99/next-head-seo)
+
+catnose さんが作成した SEO カスタマイズ系の軽量パッケージです。`Layout` コンポーネントで使用しています。
+
 
 # 開発に参加するまでの流れ
 
