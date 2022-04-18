@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3333",
     "build": "next build",
-    "start": "next start -p 3333",
+    "start": "next start -p 4000",
     "lint": "next lint --dir src",
     "lint:fix": "next lint --dir src --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'"
