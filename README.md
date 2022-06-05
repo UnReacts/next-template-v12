@@ -16,6 +16,13 @@ Next.js の開発はこのテンプレートをベースに行ってください
 
 catnose さんが作成した SEO カスタマイズ系の軽量パッケージです。`Layout` コンポーネントで使用しています。
 
+### [`husky`](https://typicode.github.io/husky/#/)
+
+`husky` は、git でコミットする直前に登録したコマンドを実行してくれるツールです。コミット前に Prettier と ESLint を走らせるようにしています。
+（カスタマイズするとプッシュ前にコマンドは走らせることもできる）
+
+あわせて [`lint-staged`](https://github.com/okonet/lint-staged) も使用していて、こちらは stage に上がっているファイルに対して Lint をかけてくれるツールです。
+
 # テンプレートの使い方
 
 テンプレートは以下の手順で使用してください。
