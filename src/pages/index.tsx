@@ -1,10 +1,15 @@
-import Container from '@/components/layout/Container';
-import Layout from '@/components/layout/Layout';
+import { NextPage } from 'next';
 
-const Home = (): JSX.Element => {
+import Layout from '@/components/common/Layout';
+import Counter from '@/components/counter/Counter';
+import { getRandomNum } from '@/lib/counterUtil';
+
+const Home: NextPage = () => {
+  const initialNum = getRandomNum();
+
   return (
-    <Layout path="/" title="サイトタイトル" noTitleTemplate={true} isTopPage={true}>
-      <Container>Hello Next.js!</Container>
+    <Layout path="/" title="タイトル" noTitleTemplate={true} isTopPage={true}>
+      <Counter initialNum={initialNum} />
     </Layout>
   );
 };

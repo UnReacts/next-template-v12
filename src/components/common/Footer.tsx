@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Container from '@/components/layout/Container';
+import Container from '@/components/common/parts/Container';
 
 const footerLinkList = [
   { title: 'ホーム', link: '/' },
@@ -10,7 +10,7 @@ const footerLinkList = [
   { title: 'プライバシーポリシー', link: '/' },
 ];
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <footer className="py-10 bg-gray-50">
       <Container>

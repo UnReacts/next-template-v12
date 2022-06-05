@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply font-ja leading-relaxed tracking-wider;
+    @apply font-ja leading-relaxed tracking-wider; /* 日本語のための設定 */
   }
 }

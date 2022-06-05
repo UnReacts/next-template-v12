@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-import Container from '@/components/layout/Container';
+import Container from '@/components/common/parts/Container';
 
 const headerLinkList = [
   { title: 'Home', link: '/' },
@@ -10,7 +10,7 @@ const headerLinkList = [
   { title: 'Contact', link: '/' },
 ];
 
-const Header = () => {
+const Header = (): JSX.Element => {
   // ドロワーの開閉の状態
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

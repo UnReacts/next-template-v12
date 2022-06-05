@@ -20,6 +20,7 @@
     "no-var": "error",
     "sort-imports": 0,
     "no-unused-vars": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "warn",
     "import/order": [
       "error",
       {
