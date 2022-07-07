@@ -16,7 +16,7 @@
   "plugins": ["@typescript-eslint", "import", "unused-imports", "tailwindcss"],
   "rules": {
     "semi": "error",
-    "no-console": "warn",
+    "no-console": "error",
     "no-var": "error",
     "sort-imports": 0,
     "no-unused-vars": "warn",
