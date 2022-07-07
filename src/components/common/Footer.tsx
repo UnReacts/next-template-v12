@@ -12,9 +12,9 @@ const footerLinkList = [
 
 const Footer = (): JSX.Element => {
   return (
-    <footer className="py-10 bg-gray-50">
+    <footer className="bg-gray-50 py-10">
       <Container>
-        <div className="flex flex-col justify-between items-start md:flex-row">
+        <div className="flex flex-col items-start justify-between md:flex-row">
           {/* ロゴ */}
           <Link href="/">
             <a>
@@ -28,7 +28,7 @@ const Footer = (): JSX.Element => {
               {footerLinkList.map(({ title, link }) => (
                 <li key={title}>
                   <Link href={link}>
-                    <a className="block py-2 mb-1 text-sm hover:opacity-75 duration-300 md:text-base">
+                    <a className="mb-1 block py-2 text-sm duration-300 hover:opacity-75 md:text-base">
                       {title}
                     </a>
                   </Link>
@@ -37,7 +37,7 @@ const Footer = (): JSX.Element => {
             </ol>
           </nav>
         </div>
-        <small className="block mt-10 text-center md:text-right">&copy; 2021 UnReact</small>
+        <small className="mt-10 block text-center md:text-right">&copy; 2021 UnReact</small>
       </Container>
     </footer>
   );

@@ -19,8 +19,8 @@ const Button = (props: ButtonProps): JSX.Element => {
   return (
     <button
       {...buttonHTMLAttributes}
-      className={`p-2 w-full text-sm text-center block rounded-md border border-theme duration-300 md:p-3 md:text-base ${
-        colorInverse ? 'text-theme bg-white hover:shadow-lg' : 'text-white bg-theme hover:shadow-lg'
+      className={`block w-full rounded-md border border-theme p-2 text-center text-sm duration-300 md:p-3 md:text-base ${
+        colorInverse ? 'bg-white text-theme hover:shadow-lg' : 'bg-theme text-white hover:shadow-lg'
       } ${className}`}
     >
       {children}

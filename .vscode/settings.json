@@ -8,7 +8,34 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "[markdown]": {
     "files.trimTrailingWhitespace": false
+  },
+  "todo-tree.general.tags": ["FIXME", "NOTE", "TODO", "CHECK"],
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check-circle-fill",
+      "foreground": "#ff9900",
+      "iconColor": "#ff9900"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "foreground": "#e9ff25",
+      "iconColor": "#e9ff25"
+    },
+    "NOTE": {
+      "icon": "paintbrush",
+      "foreground": "#00bfff",
+      "iconColor": "#00bfff"
+    },
+    "CHECK": {
+      "icon": "check-circle",
+      "foreground": "#05e45b",
+      "iconColor": "#05e45b"
+    }
   }
 }
